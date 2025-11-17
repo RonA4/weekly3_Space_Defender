@@ -1,42 +1,91 @@
-# Unity week 2: Formal elements
+<div dir="rtl">
 
-A project with step-by-step scenes illustrating some of the formal elements of game development in Unity, including: 
+# 🚀 Space Defender – Week 3 Project
 
-* Prefabs for instantiating new objects;
-* Colliders for triggering outcomes of actions;
-* Coroutines for setting time-based rules.
+**Play the game on itch.io:**  
+👉 https://alpha444rt.itch.io/week3
 
-Text explanations are available 
-[here](https://github.com/gamedev-at-ariel/gamedev-5782) in folder 04.
+---
 
-## Cloning
-To clone the project, you may need to install git lfs first (if it is not already installed):
+## 🎮 About the Game
+Space Defender הוא משחק ארקייד חללי מהיר שבו השחקן מטיס חללית, מתחמק ממכשולים, פוגע באויבים, אוסף בונוסים ומנסה לשרוד כמה שיותר זמן תוך צבירת ניקוד גבוה.
 
-    git lfs install 
+הפרויקט מבוסס על:  
+https://github.com/gamedev-at-ariel/02-prefabs-triggers
 
-To clone faster, you can limit the depth to 1 like this:
+---
 
-    git clone --depth=1 https://github.com/<repository-name>.git
+## ✨ Changes I Added to the Game (My Custom Features)
 
-When you first open this project, you may not see the text in the score field.
-This is because `TextMeshPro` is not in the project.
-The Unity Editor should hopefully prompt you to import TextMeshPro;
-once you do this, re-open the scenes, and you should be able to see the texts.
+### **1. מערכת לבבות – חיים במשחק ❤️**
+- הוספתי מערכת חיים מלאה עם **שלושה לבבות** בתחילת המשחק.  
+- כאשר השחקן נפגע – הוא מאבד לב אחד.  
+- **רק לאחר שאיבד חיים**, המשחק מאפשר לאסוף לבבות שמופיעים באקראיות.  
+- איסוף לב מחזיר חיים עד למקסימום (3).  
 
+**מטרת השינוי:** להפוך את המשחק לפחות "נוק־אאוט" ויותר מאתגר, עם ניהול חיים אסטרטגי.
 
+---
 
-## Credits
+### **2. שינוי מיקום ותצוגת ה־Score 🟡**
+- העברתי את ה־Score לפינה השמאלית העליונה.  
+- הוגדל ועוצב כך שיהיה ברור ובולט.  
+- הניקוד מתעדכן מיד בכל פגיעה או איסוף בונוס.
 
-Programming:
-* Maoz Grossman
-* Erel Segal-Halevi
+**מטרה:** שיפור הקריאות ומתן פידבק מיידי לשחקן.
 
-Online courses:
-* [The Ultimate Guide to Game Development with Unity 2019](https://www.udemy.com/the-ultimate-guide-to-game-development-with-unity/), by Jonathan Weinberger
+---
 
-Graphics:
-* [Matt Whitehead](https://ccsearch.creativecommons.org/photos/7fd4a37b-8d1a-4d4c-80a2-4ca4a3839941)
-* [Kenney's space kit](https://kenney.nl/assets/space-kit)
-* [Ductman's 2D Animated Spacehips](https://assetstore.unity.com/packages/2d/characters/2d-animated-spaceships-96852)
-* [Franc from the Noun Project](https://commons.wikimedia.org/w/index.php?curid=64661575)
-* [Greek-arrow-animated.gif by Andrikkos is licensed under CC BY-SA 3.0](https://search.creativecommons.org/photos/2db102af-80d0-4ec8-9171-1ac77d2565ce)
+## 🧱 Original Mandatory Changes (Assignment Requirements)
+
+### ✔ פגיעה בחץ הצהוב מעניקה 2 נקודות
+בונוס ה־DoubleShot מוסיף +2 נקודות לציון.
+
+---
+
+### ✔ פגיעה בפצצה גורמת ל־Game Over מידי
+פגיעה בפצצה 💣 מסיימת את המשחק באופן מיידי.
+
+---
+
+## 🧩 Gameplay Elements
+
+### ❤️ Heart (Extra Life)
+- מופיע **רק אחרי שהשחקן איבד חיים**.  
+- איסוף מחזיר חיים עד למקסימום של 3.
+
+### 💣 Bomb
+- מסוכנת מאוד — פגיעה אחת גורמת לסיום משחק מידי.
+
+### ⭐ DoubleShot Bonus
+- בונוס נדיר שמוסיף **2 נקודות** לציון.
+
+### 🎯 Enemy Missiles
+- פגיעה באויבים מעניקה **+1 נקודה**.
+
+---
+
+## 🎮 How to Play (Web Version)
+
+1. לחצו על **Fullscreen** ב־itch.io  
+2. לחצו עם העכבר בתוך חלון המשחק כדי לאפשר שליטה  
+3. השתמשו בחיצים:  
+   - ⬅ ➡ — תנועה לצדדים  
+   - ⬆ — ירייה / תנועה קדימה  
+4. הימנעו מפצצות  
+5. פגעו באויבים כדי לצבור נקודות  
+6. אספו לבבות רק לאחר שאיבדתם חיים  
+7. אספו חצים צהובים לבונוס ניקוד  
+
+---
+
+## 👨‍💻 Credits
+
+**Programming:**  
+- Maoz Grossman  
+- Erel Segal-Halevi  
+
+---
+
+</div>
+
